@@ -51,14 +51,18 @@ productsRouter.post("/",async (req, res)=>{
 //UPDATE BY ID
 
 productsRouter.put("/:id", async (req, res)=>{
-    try{
+    
+        const {id} =  req.params;
         const productoAct = req.body;
-        const id = req.params.id;
-        await contenedorProductos.updateById(id, productoAct);
+       const productosActualizados = await  contenedorProductos.updateById(parseInt(id), productoAct);
+        res.json({
+            message: `el producto con el id ${id} fue actualizado`,
+            response: productosActualizados
+        })
         
-    }catch{
+    
 
-    }
+    
 })
 
 //DELETE

@@ -16,5 +16,11 @@
     "title": "Camiseta Japon",
     "price": 12000,
     "thumbnail": "https://assets.adidas.com/images/w_600,f_auto,q_auto/feaa31c9eda042149eabae8800e01689_9366/Camiseta_primera_equipacion_Japon_22_Azul_HC6299_01_laydown.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Globo Terráqueo",
+    "price": 345.67,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png"
   }
 ]
