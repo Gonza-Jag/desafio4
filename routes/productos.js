@@ -70,7 +70,7 @@ productsRouter.put("/:id", async (req, res)=>{
 productsRouter.delete("/:id", async(req,res)=>{
     try{
         const id = req.params.id;
-       const productoEliminado =  await contenedorProductos.deleteById(id);
+       const productoEliminado =  await contenedorProductos.deleteById(parseInt(id));
         res.send(productoEliminado)
 
     }catch{

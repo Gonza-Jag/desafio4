@@ -95,7 +95,7 @@ class Contenedor{
                 id:id,
                 ...body
             };
-            await fs.promises.writeFile(this.nameFile, JSON.stringify(productos, null, 2))
+            await fs.promises.writeFile(this.archivo, JSON.stringify(productos, null, 2))
             return productos;
         } catch (error) {
             console.log(error)
